@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Limpiezas y Soluciones Tenerife - Services de Nettoyage Professionnels</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#0077B6",
+          "primary-container": "#0060a0",
+          "on-primary": "#ffffff",
+          "primary-fixed": "#cde5ff",
+          "on-primary-fixed": "#001d32",
+          "secondary": "#2c694e",
+          "secondary-container": "#aeeecb",
+          "on-secondary": "#ffffff",
+          "tertiary": "#23616b",
+          "tertiary-fixed": "#b1ecf8",
+          "on-tertiary": "#ffffff",
+          "surface": "#f8f9fa",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f3f4f5",
+          "surface-container": "#edeeef",
+          "surface-container-high": "#e7e8e9",
+          "surface-container-highest": "#e1e3e4",
+          "on-surface": "#191c1d",
+          "on-surface-variant": "#404850",
+          "outline": "#707881",
+          "outline-variant": "#bfc7d1",
+          "surface-tint": "#0077B6",
+        },
+        fontFamily: {
+          "headline": ["Plus Jakarta Sans"],
+          "body": ["Manrope"],
+          "label": ["Manrope"]
+        },
+        borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px" },
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .carousel-slide { display: none; }
+  .carousel-slide.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .carousel-slide.active { animation: fadeIn 0.6s ease-in-out; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm border-b border-outline-variant/20">
+  <div class="flex justify-between items-center w-full px-6 py-3 max-w-7xl mx-auto">
+    <div class="flex items-center gap-3">
+      <img src="logo-final.png" alt="Logo Limpiezas y Soluciones" class="h-10 w-10 object-contain rounded-lg"/>
+      <span class="text-lg md:text-xl font-extrabold tracking-tight text-primary font-headline">Limpiezas y Soluciones</span>
+    </div>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#services">Nos services</a>
+      <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#expertise">Notre expertise</a>
+      <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#about">À propos</a>
+      <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="bg-primary text-on-primary px-5 py-2.5 rounded-lg font-label font-bold text-sm transition-all hover:shadow-lg active:scale-95">
+      Devis gratuit
+    </a>
+  </div>
+</nav>
+
+<!-- HERO CAROUSEL -->
+<section class="relative pt-16 h-screen min-h-[600px] overflow-hidden">
+  <div id="carousel" class="relative h-full">
+    <div class="carousel-slide active absolute inset-0" style="background: url('photo1.jpg') center/cover no-repeat;">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-8">
+        <h1 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">Libérez votre temps</h1>
+        <p class="text-white/90 text-lg md:text-xl max-w-xl mb-8">Service de nettoyage professionnel à Tenerife</p>
+        <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all">Demander un devis</a>
+      </div>
+    </div>
+    <div class="carousel-slide absolute inset-0" style="background: url('photo2.jpg') center/cover no-repeat;">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-8">
+        <h1 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">Produits 100% écologiques</h1>
+        <p class="text-white/90 text-lg md:text-xl max-w-xl mb-8">Certifiés, non toxiques, respectueux de votre santé</p>
+        <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all">Demander un devis</a>
+      </div>
+    </div>
+    <div class="carousel-slide absolute inset-0" style="background: url('photo3.jpg') center/cover no-repeat;">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-8">
+        <h1 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">Particuliers & Professionnels</h1>
+        <p class="text-white/90 text-lg md:text-xl max-w-xl mb-8">Des solutions adaptées à chaque besoin</p>
+        <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all">Demander un devis</a>
+      </div>
+    </div>
+    <div class="carousel-slide absolute inset-0" style="background: url('photo4.jpg') center/cover no-repeat;">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-8">
+        <h1 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">10 ans d'expérience</h1>
+        <p class="text-white/90 text-lg md:text-xl max-w-xl mb-8">Un savoir-faire unique au service de votre intérieur</p>
+        <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all">Demander un devis</a>
+      </div>
+    </div>
+  </div>
+  <!-- Dots -->
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+    <button onclick="goToSlide(0)" class="carousel-dot w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-index="0"></button>
+    <button onclick="goToSlide(1)" class="carousel-dot w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-index="1"></button>
+    <button onclick="goToSlide(2)" class="carousel-dot w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-index="2"></button>
+    <button onclick="goToSlide(3)" class="carousel-dot w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-index="3"></button>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="bg-primary py-12">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-3xl md:text-4xl font-extrabold text-white font-headline">10</div>
+        <div class="text-white/80 text-sm font-medium uppercase tracking-wide mt-1">Années d'expérience</div>
+      </div>
+      <div>
+        <div class="text-3xl md:text-4xl font-extrabold text-white font-headline">100+</div>
+        <div class="text-white/80 text-sm font-medium uppercase tracking-wide mt-1">Clients satisfaits</div>
+      </div>
+      <div>
+        <div class="text-3xl md:text-4xl font-extrabold text-white font-headline">100%</div>
+        <div class="text-white/80 text-sm font-medium uppercase tracking-wide mt-1">Produits écologiques</div>
+      </div>
+      <div>
+        <div class="text-3xl md:text-4xl font-extrabold text-white font-headline">24/7</div>
+        <div class="text-white/80 text-sm font-medium uppercase tracking-wide mt-1">Disponibilité</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO / ABOUT -->
+<section class="py-24 bg-surface-container-lowest" id="about">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Qui sommes-nous</span>
+        <h2 class="font-headline text-4xl font-bold text-on-surface mb-6">Limpiezas y Soluciones Tenerife</h2>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-5">
+          Entreprise locale de services de nettoyage depuis 10 ans, nous sommes un acteur de référence à Tenerife dans les métiers de la propreté et de l'entretien.
+        </p>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+          Chaque jour, nous développons des solutions innovantes et responsables qui contribuent à la performance de vos environnements de travail, de vie, de loisirs. Propreté résidentielle, nettoyage commercial, entretien de locations touristiques : notre équipe œuvre au quotidien pour créer des environnements plus sains, sûrs et fiables.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#services" class="bg-primary text-on-primary px-7 py-3.5 rounded-lg font-bold transition-all hover:shadow-xl hover:-translate-y-1 text-center">Nos services</a>
+          <a href="#contact" class="bg-surface-container text-on-surface px-7 py-3.5 rounded-lg font-bold transition-all hover:bg-surface-container-high text-center">Nous contacter</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="grid grid-cols-2 gap-4">
+          <img src="photo1.jpg" alt="Nettoyage professionnel" class="rounded-xl object-cover aspect-square shadow-lg"/>
+          <img src="photo2.jpg" alt="Service de qualité" class="rounded-xl object-cover aspect-square shadow-lg mt-8"/>
+          <img src="photo3.jpg" alt="Particuliers et professionnels" class="rounded-xl object-cover aspect-square shadow-lg -mt-4"/>
+          <img src="photo4.jpg" alt="10 ans d'expérience" class="rounded-xl object-cover aspect-square shadow-lg mt-4"/>
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-primary p-6 rounded-xl text-on-primary shadow-xl hidden md:block">
+          <p class="font-headline text-3xl font-bold">10 ans</p>
+          <p class="text-sm opacity-90">d'expérience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-24 bg-surface-container-low" id="services">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="text-center mb-16">
+      <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Nos expertises</span>
+      <h2 class="font-headline text-4xl font-bold text-on-surface mb-4">Découvrez toutes nos expertises</h2>
+      <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Notre mission est d'accompagner nos clients dans des environnements toujours plus sains, sûrs et fiables.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Particuliers -->
+      <div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-primary/10">
+        <div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 text-3xl group-hover:bg-primary group-hover:text-on-primary transition-all duration-500 text-primary">
+          <span class="material-symbols-outlined text-4xl">home</span>
+        </div>
+        <h3 class="font-headline text-2xl font-bold mb-4">Particuliers</h3>
+        <ul class="space-y-3 text-sm text-on-surface-variant font-medium mb-8">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span> Ménage régulier (hebdomadaire, bi-mensuel)</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span> Grand nettoyage de printemps</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span> Nettoyage avant/après déménagement</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span> Entretien de résidences secondaires</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span> Repassage et linge</li>
+        </ul>
+        <a href="#contact" class="text-primary font-bold hover:underline">En savoir plus →</a>
+      </div>
+      <!-- Professionnels -->
+      <div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-secondary/10">
+        <div class="w-16 h-16 bg-secondary-container rounded-xl flex items-center justify-center mb-8 text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all duration-500">
+          <span class="material-symbols-outlined text-4xl">business</span>
+        </div>
+        <h3 class="font-headline text-2xl font-bold mb-4">Professionnels</h3>
+        <ul class="space-y-3 text-sm text-on-surface-variant font-medium mb-8">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span> Bureaux et espaces de travail</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span> Commerces et boutiques</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span> Restaurants et cafés</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span> Copropriétés et parties communes</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span> Nettoyage de chantier</li>
+        </ul>
+        <a href="#contact" class="text-secondary font-bold hover:underline">En savoir plus →</a>
+      </div>
+      <!-- Locations touristiques -->
+      <div class="group bg-primary p-10 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-8 translate-x-8"></div>
+        <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-8 text-white">
+          <span class="material-symbols-outlined text-4xl">beach_access</span>
+        </div>
+        <h3 class="font-headline text-2xl font-bold mb-4 text-white">Locations Touristiques</h3>
+        <ul class="space-y-3 text-sm text-white/80 font-medium mb-8">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-white/90 text-lg mt-0.5">check_circle</span> Ménage entre locataires (Airbnb, Booking)</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-white/90 text-lg mt-0.5">check_circle</span> Gestion complète du linge</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-white/90 text-lg mt-0.5">check_circle</span> Contrôle qualité avant arrivée</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-white/90 text-lg mt-0.5">check_circle</span> Service express (check-out/check-in rapide)</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-white/90 text-lg mt-0.5">check_circle</span> Stocks et fournitures</li>
+        </ul>
+        <a href="#contact" class="text-white font-bold hover:underline">En savoir plus →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<section class="py-24 bg-surface-container-lowest" id="expertise">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="text-center mb-16">
+      <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Pourquoi nous choisir</span>
+      <h2 class="font-headline text-4xl font-bold text-on-surface">Pourquoi choisir Limpiezas y Soluciones ?</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="flex items-start gap-4 p-8 rounded-xl bg-surface-container-low border-l-4 border-primary hover:shadow-lg transition-all">
+        <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0 mt-1">
+          <span class="material-symbols-outlined">location_on</span>
+        </div>
+        <div>
+          <h3 class="font-headline text-xl font-bold text-on-surface mb-3">La proximité</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Basés à Tenerife, nous intervenons rapidement dans toute la zone. Nous vous assurons une grande réactivité et une personnalisation de nos services en fonction de vos besoins locaux.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 p-8 rounded-xl bg-surface-container-low border-l-4 border-secondary hover:shadow-lg transition-all">
+        <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary shrink-0 mt-1">
+          <span class="material-symbols-outlined">star</span>
+        </div>
+        <div>
+          <h3 class="font-headline text-xl font-bold text-on-surface mb-3">L'expertise</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Notre offre repose sur 10 ans d'expérience et l'expertise de notre équipe qualifiée. Formation continue, standards de qualité élevés, et produits certifiés écologiques.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 p-8 rounded-xl bg-surface-container-low border-l-4 border-tertiary hover:shadow-lg transition-all">
+        <div class="w-12 h-12 rounded-full bg-tertiary-fixed rounded-full flex items-center justify-center text-tertiary shrink-0 mt-1">
+          <span class="material-symbols-outlined">handshake</span>
+        </div>
+        <div>
+          <h3 class="font-headline text-xl font-bold text-on-surface mb-3">La confiance</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Nous construisons chaque jour une relation de confiance avec nos clients, grâce à l'écoute, la transparence, et notre capacité à tenir nos engagements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHT ÉCOLOGIQUE -->
+<section class="py-24 px-8">
+  <div class="max-w-5xl mx-auto bg-slate-900 rounded-2xl p-12 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/20 to-transparent pointer-events-none"></div>
+    <div class="relative z-10">
+      <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+        <span class="material-symbols-outlined text-3xl text-white">eco</span>
+      </div>
+      <h2 class="font-headline text-3xl md:text-4xl font-bold mb-5">La propreté, c'est fondamental</h2>
+      <p class="text-lg opacity-80 max-w-2xl mx-auto font-light mb-10">
+        Nos solutions de nettoyage utilisent exclusivement des produits 100% écologiques, certifiés et non toxiques. Respectueux de votre santé et de l'environnement, nos produits garantissent des résultats professionnels tout en préservant la planète.
+      </p>
+      <a href="#contact" class="bg-primary text-white px-10 py-4 rounded-lg font-bold hover:bg-primary-container transition-all hover:scale-105 inline-block">
+        Découvrir nos solutions
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGE -->
+<section class="py-16 bg-surface-container-low">
+  <div class="max-w-3xl mx-auto px-8 text-center">
+    <span class="material-symbols-outlined text-primary text-5xl mb-6 block" style="font-variation-settings:'FILL' 1;">format_quote</span>
+    <p class="text-on-surface text-xl md:text-2xl font-medium leading-relaxed mb-8 italic">
+      "L'équipe de Limpiezas y Soluciones s'occupe de mes locations Airbnb depuis 2 ans. Service impeccable, réactif et professionnel. Mes clients sont toujours ravis de la propreté à leur arrivée. Je recommande à 100% !"
+    </p>
+    <div>
+      <p class="font-bold text-on-surface text-lg">Maria G.</p>
+      <p class="text-on-surface-variant text-sm">Propriétaire de 3 locations touristiques · Tenerife Sud</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-24 bg-surface-container-lowest" id="contact">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Nous contacter</span>
+        <h2 class="font-headline text-4xl font-bold text-on-surface mb-6">Demandez votre devis gratuit</h2>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-10">
+          Contactez-nous pour recevoir une estimation gratuite et sans engagement, adaptée à vos besoins spécifiques.
+        </p>
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-on-surface">Email</h4>
+              <a href="mailto:berchielli.lisepro@gmail.com" class="text-primary hover:underline text-sm">berchielli.lisepro@gmail.com</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-on-surface">Zone d'intervention</h4>
+              <p class="text-on-surface-variant text-sm">Tenerife et environs</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+              <span class="material-symbols-outlined">schedule</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-on-surface">Horaires</h4>
+              <p class="text-on-surface-variant text-sm">Lundi – Samedi · 8h00 – 19h00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-surface-container p-8 md:p-12 rounded-2xl shadow-xl border border-outline-variant/20">
+        <h3 class="font-headline text-2xl font-bold text-on-surface mb-6">Besoin d'un devis personnalisé ?</h3>
+        <p class="text-on-surface-variant mb-8">Envoyez-nous un message et nous vous répondons sous 24h.</p>
+        <div class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" placeholder="Votre nom" class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"/>
+            <input type="tel" placeholder="+34 600 000 000" class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"/>
+          </div>
+          <input type="email" placeholder="votre@email.com" class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"/>
+          <select class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-on-surface-variant">
+            <option value="">Type de service...</option>
+            <option>Particuliers</option>
+            <option>Professionnels</option>
+            <option>Locations touristiques</option>
+          </select>
+          <textarea placeholder="Décrivez vos besoins..." class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all min-h-[120px]"></textarea>
+          <a href="mailto:berchielli.lisepro@gmail.com" class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:bg-primary-container transition-all hover:shadow-lg active:scale-[0.98] block text-center">
+            Demander un devis gratuit
+          </a>
+          <p class="text-center text-xs text-on-surface-variant italic">Réponse garantie sous 24h · Devis gratuit et sans engagement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-white py-12 px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="logo-final.png" alt="Logo" class="h-10 w-10 object-contain rounded-lg bg-white/10 p-1"/>
+          <span class="text-xl font-extrabold text-primary font-headline">Limpiezas y Soluciones</span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">Services de nettoyage professionnels à Tenerife. Particuliers, professionnels et locations touristiques.</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold tracking-wide uppercase text-primary mb-5">Services</h4>
+        <ul class="space-y-3">
+          <li><a href="#services" class="text-sm text-slate-400 hover:text-primary transition-colors">Particuliers</a></li>
+          <li><a href="#services" class="text-sm text-slate-400 hover:text-primary transition-colors">Professionnels</a></li>
+          <li><a href="#services" class="text-sm text-slate-400 hover:text-primary transition-colors">Locations touristiques</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold tracking-wide uppercase text-primary mb-5">Contact</h4>
+        <div class="space-y-3">
+          <p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">mail</span> berchielli.lisepro@gmail.com</p>
+          <p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">location_on</span> Tenerife</p>
+          <p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">schedule</span> Lun–Sam · 8h–19h</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8 text-center">
+      <p class="text-xs text-slate-500 uppercase tracking-widest">© 2025 Limpiezas y Soluciones Tenerife — Tous droits réservés</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+
+  function goToSlide(n) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('bg-white');
+    dots[currentSlide].classList.add('bg-white/60');
+    currentSlide = n;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('bg-white');
+    dots[currentSlide].classList.remove('bg-white/60');
+  }
+
+  function nextSlide() {
+    goToSlide((currentSlide + 1) % slides.length);
+  }
+
+  // Init first dot
+  dots[0].classList.add('bg-white');
+  dots[0].classList.remove('bg-white/60');
+
+  // Auto-advance
+  setInterval(nextSlide, 5000);
+</script>
+</body>
+</html>

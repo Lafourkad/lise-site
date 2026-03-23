@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "tertiary-container": "#3f7a85",
+                  "tertiary-fixed": "#b1ecf8",
+                  "primary-fixed-dim": "#94ccff",
+                  "on-primary": "#ffffff",
+                  "surface-container": "#edeeef",
+                  "primary-container": "#0077b6",
+                  "on-error-container": "#93000a",
+                  "on-surface-variant": "#404850",
+                  "on-tertiary": "#ffffff",
+                  "error-container": "#ffdad6",
+                  "on-tertiary-fixed": "#001f24",
+                  "error": "#ba1a1a",
+                  "surface": "#f8f9fa",
+                  "tertiary": "#23616b",
+                  "on-background": "#191c1d",
+                  "surface-container-lowest": "#ffffff",
+                  "on-secondary": "#ffffff",
+                  "on-surface": "#191c1d",
+                  "on-primary-container": "#f3f7ff",
+                  "inverse-surface": "#2e3132",
+                  "on-primary-fixed": "#001d32",
+                  "on-primary-fixed-variant": "#004b74",
+                  "secondary": "#2c694e",
+                  "on-secondary-container": "#316e52",
+                  "outline": "#707881",
+                  "surface-container-highest": "#e1e3e4",
+                  "surface-container-high": "#e7e8e9",
+                  "inverse-on-surface": "#f0f1f2",
+                  "surface-dim": "#d9dadb",
+                  "secondary-container": "#aeeecb",
+                  "primary": "#0077B6",
+                  "on-secondary-fixed-variant": "#0e5138",
+                  "on-tertiary-fixed-variant": "#054e58",
+                  "tertiary-fixed-dim": "#95d0dc",
+                  "background": "#f8f9fa",
+                  "outline-variant": "#bfc7d1",
+                  "surface-container-low": "#f3f4f5",
+                  "primary-fixed": "#cde5ff",
+                  "on-tertiary-container": "#e8fbff",
+                  "on-secondary-fixed": "#002114",
+                  "on-error": "#ffffff",
+                  "secondary-fixed-dim": "#95d4b3",
+                  "inverse-primary": "#94ccff",
+                  "surface-tint": "#0077B6",
+                  "secondary-fixed": "#b1f0ce",
+                  "surface-bright": "#f8f9fa",
+                  "surface-variant": "#e1e3e4"
+                },
+                fontFamily: {
+                  "headline": ["Plus Jakarta Sans"],
+                  "body": ["Manrope"],
+                  "label": ["Manrope"]
+                },
+                borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+              },
+            },
+          }
+    </script>
+<style>
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm border-b border-outline-variant/20">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl md:text-2xl font-extrabold tracking-tight text-primary font-headline">
+                Limpezas y Soluciones
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-semibold border-b-2 border-primary pb-1 transition-all duration-300" href="#">Solutions Stratégiques</a>
+<a class="text-slate-600 font-medium hover:text-primary transition-colors" href="#">Partenariat B2B</a>
+<a class="text-slate-600 font-medium hover:text-primary transition-colors" href="#">La Vision Lise</a>
+<a class="text-slate-600 font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label font-bold text-sm transition-all duration-300 ease-in-out hover:shadow-lg active:scale-95">
+                Audit d'Excellence
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative min-h-[870px] flex items-center px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Partenaire Stratégique pour l'Excellence Opérationnelle</span>
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold text-on-surface leading-tight tracking-tight mb-6">
+                        Élever Votre Environnement de Travail : <span class="text-primary">Solutions B2B Stratégiques</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+                        Basés à <strong>La Orotava</strong>, nous transcendons le simple nettoyage pour devenir le pilier de votre efficacité. Nous concevons des stratégies de maintenance proactives qui créent de la valeur durable pour votre entreprise.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold transition-all hover:shadow-xl hover:-translate-y-1">
+                            Lancer une Étude de Performance
+                        </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-lg font-bold transition-all hover:bg-surface-dim">
+                            Nos Leviers de Valeur
+                        </button>
+</div>
+<div class="mt-12 flex items-center gap-8 border-t border-outline-variant/30 pt-8">
+<div>
+<div class="text-2xl font-bold text-primary">10 Ans</div>
+<div class="text-sm text-on-surface-variant font-medium uppercase tracking-tighter">De Leadership</div>
+</div>
+<div class="h-10 w-px bg-outline-variant/30"></div>
+<div>
+<div class="text-2xl font-bold text-primary">La Orotava</div>
+<div class="text-sm text-on-surface-variant font-medium uppercase tracking-tighter">Hub Opérationnel</div>
+</div>
+<div class="h-10 w-px bg-outline-variant/30"></div>
+<div>
+<div class="text-2xl font-bold text-primary">Visionnaire</div>
+<div class="text-sm text-on-surface-variant font-medium uppercase tracking-tighter">Approche B2B</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Strategic Business Environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDNaP0bsmnlJdmVuTPFXSlKZVmaq5Zx8ePrzDnK2rF9l0-16HOCReanX-OuOrTJvCTJMyaNBnzURDK0m9UCcLTTRzuQ4JvOHyagMz962xGfVYeH18TLujKcFQplAZ-jq_ooCsy-Qh_psW4Vrc3JFx3jCYuv2x1N_1jaWqeqdyZDG63n1VYvF-OqT0C31HNK0w5nd2ZWsIZn4vVM2zAGQA5yvkJ0WcMBZ0VTu99g-1I73_4y0S6kB99kx8E5na0JHFkhYajMdTBuiCF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-2xl max-w-[280px] border border-outline-variant/15">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<span class="font-bold text-slate-800">Vision Long Terme</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-snug">"Nous optimisons vos actifs par une résolution proactive des problématiques environnementales."</p>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-fixed/10 to-transparent -z-10"></div>
+</section>
+<section class="py-24 bg-surface-container-lowest overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] group">
+<img alt="Lise Berchielli - Visionary Leader" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8eVyVG3KVDX4VLVVbCcDSsT5D0iEE08mXIW6a4YA3oH6W7CNN4nuzy0On1xznx4FbK77H_3b63Qwocu9LE9UiOWk_maxIhGhtUzyUWQwdF65-Vt8zTUxosTdOw93IhRBO5l6B6nNE4o9CZuiE48IpDK4hektj110Kc-lDBShNcJRHdr32h107GySUq_l6tc8WBhD2Y_MK6SXD_Ef_NUT_OpwmCln6GyLcUM8Wb__zJ0HxQW_-VPqP07p8MK35ISgcEEtvauvab9S"/>
+</div>
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full -z-10 blur-3xl"></div>
+<div class="absolute -bottom-8 -right-8 p-8 bg-primary rounded-2xl text-on-primary shadow-xl hidden md:block">
+<p class="font-headline text-3xl font-bold">Expertise</p>
+<p class="text-sm opacity-90">Architecture de Service</p>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">L'Architecture de la Performance</span>
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-6">Le Leadership Visionnaire de Lise Berchielli</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+                            Forte de 10 ans d'expérience au plus haut niveau opérationnel, Lise Berchielli a fondé <strong>Limpezas y Soluciones</strong> pour redéfinir les standards du B2B. Elle ne se contente pas de diriger ; elle crée des stratégies de maintenance sur mesure.
+                        </p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            À La Orotava, Lise conçoit chaque protocole comme une pièce d'un moteur de performance. Sa capacité à anticiper les défis logistiques et à proposer des solutions sur-mesure apporte une authenticité stratégique unique, transformant chaque intervention en un investissement pour votre excellence durable.
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">strategy</span>
+</div>
+<div>
+<p class="font-bold text-lg text-on-surface">Lise Berchielli</p>
+<p class="text-sm text-on-surface-variant">Fondatrice &amp; Stratège Opérationnelle</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-xl">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Ingénierie de Maintenance B2B</span>
+<h2 class="font-headline text-4xl font-bold text-on-surface">Optimisation de l'Environnement de Business</h2>
+</div>
+<p class="max-w-md text-on-surface-variant italic border-l-2 border-primary pl-6">
+                        De notre siège de La Orotava, nous déployons des systèmes de maintenance intelligents qui garantissent l'efficacité de vos infrastructures à travers Tenerife.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-primary/10">
+<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-500">
+<span class="material-symbols-outlined text-4xl">settings_suggest</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Stratégie Corporate</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Nous synchronisons nos interventions avec vos flux de travail pour maximiser la productivité de vos équipes sans interruption.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant font-medium">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-xl">insights</span> Audit de flux opérationnel</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-xl">insights</span> Maintenance préventive</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-xl">insights</span> Synergie B2B intégrée</li>
+</ul>
+</div>
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-secondary/10">
+<div class="w-16 h-16 bg-secondary-container rounded-xl flex items-center justify-center mb-8 text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all duration-500">
+<span class="material-symbols-outlined text-4xl">high_quality</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Gestion d'Actifs de Prestige</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Préservation et valorisation de vos actifs immobiliers haut de gamme par des soins techniques experts et constants.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant font-medium">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-xl">check_circle</span> Valorisation patrimoniale</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-xl">check_circle</span> Standard hôtelier 5*</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-xl">check_circle</span> Contrôle qualité rigoureux</li>
+</ul>
+</div>
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-tertiary/10">
+<div class="w-16 h-16 bg-tertiary-fixed rounded-xl flex items-center justify-center mb-8 text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-all duration-500">
+<span class="material-symbols-outlined text-4xl">precision_manufacturing</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Efficience Industrielle</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Résolution de problèmes complexes pour environnements critiques, garantissant sécurité et continuité de service.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant font-medium">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary text-xl">flash_on</span> Réactivité d'urgence</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary text-xl">flash_on</span> Gestion des risques</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary text-xl">flash_on</span> Optimisation des coûts</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<img alt="La Orotava Strategic Hub" class="rounded-xl aspect-square object-cover shadow-lg grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEgQpxORsPYz4-uwzi-BfvUHWobDkOr8y24rNa07USjQPoAcYm6Xg3HxQffPiOVasZ4gNIB3JgAguvTiVCq4xNXfm6qw4oMa1XRGIfhWE_ZlV3MAqun0I6QoBSxZetMDbpY_AG0NeRtGtUJcbV9V7peNsEur5HWIO6yqu9vrbMuRC5TZVnn_Op3rBB_C4rSzO3nwQyiHp3eX35sGkdHMgCSIONp7o2teTaGi-rYYNGF1f6P4PH6p67SVxHVpozzn-1k0tHzn6vnCqH"/>
+<img alt="Strategic Detail" class="rounded-xl aspect-video object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_vHOHzVjbRG7KFLNFKXf0eaMXbI7A657-J18pdM3xSFA03f27T6HmNH7eA_AzOR53_1F9AF2ay7xtOzCDX9JPlsW2hMyBpoOaqQW9KTJhGlOQMza1dD_VWcFOPHsTulgKCQNAW_AADqo7V50P_QfFB-IYnxDrOh3EKh2cU41U6Kh6yQx0tihNf-Com8tDLVP028x85bPRUmmnj-kObkgScZGXgL3EYPWX2KpRP5k-3JDuiL2BxBnMYMX6Toi8kazlpJT3m4OyxzuD"/>
+</div>
+<div class="space-y-4">
+<img alt="Corporate Excellence" class="rounded-xl aspect-video object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9C0W_hE-Y6WxfNKcpd0FNPGFjj5eIYGzsO_bYJbEP1Q2Uk9DDj42kmTfKC8Wb09eLdzI5jya-vmidekbQlAR3kr74ImHJN9QsT0zpLDZxhU5DZzidu7tl94zKpW0F0RsX94956-5Tn4EYWHK_Dk1i1PbT-MWkynyxUEExjC8P28frDnUudmKnsVdW_tJiztfSCv5V8gjqJSJbTrAAI-Xktnek79N2YNQbumru1gD8gmeb5_MIRQFcf8_U95ThOqqUVvA0NHpKcwiZ"/>
+<img alt="Lise Berchielli - Managing Excellence" class="rounded-xl aspect-square object-cover shadow-lg grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8eVyVG3KVDX4VLVVbCcDSsT5D0iEE08mXIW6a4YA3oH6W7CNN4nuzy0On1xznx4FbK77H_3b63Qwocu9LE9UiOWk_maxIhGhtUzyUWQwdF65-Vt8zTUxosTdOw93IhRBO5l6B6nNE4o9CZuiE48IpDK4hektj110Kc-lDBShNcJRHdr32h107GySUq_l6tc8WBhD2Y_MK6SXD_Ef_NUT_OpwmCln6GyLcUM8Wb__zJ0HxQW_-VPqP07p8MK35ISgcEEtvauvab9S"/>
+</div>
+</div>
+<div>
+<h2 class="font-headline text-4xl font-bold mb-8">Votre Levier de Croissance à La Orotava</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Ancrés à <strong>La Orotava</strong>, nous appréhendons la maintenance comme un outil stratégique. En éliminant les frictions logistiques, Limpezas y Soluciones permet à votre entreprise de se concentrer sur ses objectifs fondamentaux tout en bénéficiant d'une image d'excellence absolue.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4 p-5 rounded-lg bg-surface-container-low border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mt-1">troubleshoot</span>
+<div>
+<h4 class="font-bold text-lg text-on-surface">Résolution Proactive</h4>
+<p class="text-on-surface-variant text-sm">Nous identifions et résolvons les problématiques avant qu'elles n'impactent votre activité.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 rounded-lg bg-surface-container-low border-l-4 border-secondary">
+<span class="material-symbols-outlined text-secondary mt-1">handshake</span>
+<div>
+<h4 class="font-bold text-lg text-on-surface">Partenariat Durable</h4>
+<p class="text-on-surface-variant text-sm">Une relation de confiance bâtie sur la création de valeur et l'accompagnement stratégique de Lise Berchielli.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 rounded-lg bg-surface-container-low border-l-4 border-tertiary">
+<span class="material-symbols-outlined text-tertiary mt-1">monitoring</span>
+<div>
+<h4 class="font-bold text-lg text-on-surface">Efficacité Mesurable</h4>
+<p class="text-on-surface-variant text-sm">Des indicateurs de performance clairs et un reporting axé sur l'optimisation opérationnelle.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto bg-slate-900 rounded-2xl p-16 text-center text-white relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/20 to-transparent pointer-events-none"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-6">Investissez dans votre Excellence</h2>
+<p class="text-xl mb-10 opacity-80 max-w-2xl mx-auto font-light">
+                        Planifiez une consultation stratégique avec Lise Berchielli pour transformer la gestion de votre patrimoine et de vos bureaux.
+                    </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<button class="bg-primary text-white px-10 py-4 rounded-lg font-bold hover:bg-primary-container transition-all hover:scale-105">
+                            Étude de Stratégie B2B
+                        </button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-lg font-bold hover:bg-white/20 transition-all">
+                            Standards de Performance
+                        </button>
+</div>
+<p class="mt-8 text-sm opacity-50 font-medium uppercase tracking-widest">Conseil Personnalisé Sous 24h</p>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div>
+<span class="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Audit de Performance Site</span>
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-6">Prêt à optimiser vos opérations ?</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            L'équipe de <strong>Limpezas y Soluciones</strong> analyse vos enjeux critiques pour déployer une solution de maintenance agile, génératrice de valeur et budgétairement optimisée.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Évaluation Stratégique Directe</h4>
+<p class="text-sm text-on-surface-variant">Lise Berchielli analyse personnellement le potentiel d'optimisation de vos espaces.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Création de Valeur Long Terme</h4>
+<p class="text-sm text-on-surface-variant">Une maintenance pensée comme un investissement, pas comme un coût.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-2xl shadow-xl border border-outline-variant/20">
+<form action="#" class="space-y-6" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface block px-1" for="company_name">Entité Commerciale</label>
+<input class="w-full px-4 py-3 rounded-lg border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" id="company_name" name="company_name" placeholder="Ex: Groupe Industriel Orotava" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface block px-1" for="contact_person">Représentant</label>
+<input class="w-full px-4 py-3 rounded-lg border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" id="contact_person" name="contact_person" placeholder="Votre nom" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface block px-1" for="email">E-mail Corporatif</label>
+<input class="w-full px-4 py-3 rounded-lg border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" id="email" name="email" placeholder="nom@entreprise.com" required="" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface block px-1" for="phone">Ligne Directe</label>
+<input class="w-full px-4 py-3 rounded-lg border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" id="phone" name="phone" placeholder="+34 600 000 000" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface block px-1" for="message">Objectifs de Maintenance &amp; Problématiques</label>
+<textarea class="w-full px-4 py-3 rounded-lg border-outline-variant bg-surface focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none min-h-[120px]" id="message" name="message" placeholder="Quels sont vos défis opérationnels actuels ?"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:bg-primary-container transition-all hover:shadow-lg active:scale-[0.98]" type="submit">
+                                Solliciter un Audit Stratégique
+                            </button>
+<p class="text-center text-xs text-on-surface-variant italic">
+                                Confidentialité stratégique garantie pour tous nos partenaires d'affaires.
+                            </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-900 text-white w-full py-16 px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="lg:col-span-1">
+<span class="text-2xl font-extrabold text-primary mb-6 block font-headline">Limpezas y Soluciones</span>
+<p class="font-body text-sm text-slate-400 max-w-xs leading-relaxed">
+                    Partenaire stratégique de votre excellence opérationnelle à Tenerife Nord. Expertise B2B sous le leadership de Lise Berchielli.
+                </p>
+</div>
+<div>
+<h4 class="text-sm font-bold tracking-wide uppercase text-primary mb-6">Expertise</h4>
+<ul class="space-y-3">
+<li><a class="text-sm text-slate-400 hover:text-primary transition-colors inline-block" href="#">Maintenance Corporate</a></li>
+<li><a class="text-sm text-slate-400 hover:text-primary transition-colors inline-block" href="#">Gestion d'Actifs Prestige</a></li>
+<li><a class="text-sm text-slate-400 hover:text-primary transition-colors inline-block" href="#">Efficience Industrielle</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-bold tracking-wide uppercase text-primary mb-6">Le Partenariat</h4>
+<ul class="space-y-3">
+<li><a class="text-sm text-slate-400 hover:text-primary transition-colors inline-block" href="#">La Vision Stratégique</a></li>
+<li><a class="text-sm text-slate-400 hover:text-primary transition-colors inline-block" href="#">La Orotava HQ</a></li>
+<li><a class="text-sm text-slate-400 hover:text-primary transition-colors inline-block" href="#">Gouvernance &amp; Qualité</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-bold tracking-wide uppercase text-primary mb-6">Contact Exécutif</h4>
+<div class="space-y-4">
+<p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">call</span> +34 922 00 00 00</p>
+<p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">mail</span> contact@limpezas-soluciones.com</p>
+<p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">location_on</span> La Orotava, Tenerife</p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-800">
+<p class="font-body text-xs text-slate-500 text-center uppercase tracking-widest">
+                © 2024 Limpezas y Soluciones. Vision, Authenticité &amp; Excellence B2B.
+            </p>
+</div>
+</footer>
+
+</body></html>
