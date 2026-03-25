@@ -52,8 +52,8 @@
   }
   .carousel-slide { display: none; }
   .carousel-slide.active { display: block; }
-  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-  .carousel-slide.active { animation: fadeIn 0.6s ease-in-out; }
+  @keyframes slideIn { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+  .carousel-slide.active { animation: slideIn 0.6s ease-in-out; }
   [data-lang="es"], [data-lang="fr"], [data-lang="en"] { display: none; }
   html[lang="es"] [data-lang="es"] { display: inline; }
   html[lang="fr"] [data-lang="fr"] { display: inline; }
@@ -312,35 +312,25 @@
           <span data-lang="en">Individuals</span>
         </h3>
         <ul class="space-y-3 text-sm text-on-surface-variant font-medium mb-8 flex-grow">
-          <li class="flex items-center justify-center gap-2">
-            <svg class="text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span data-lang="es">Limpieza regular (semanal, quincenal)</span>
-            <span data-lang="fr">Ménage régulier (hebdomadaire, bi-mensuel)</span>
-            <span data-lang="en">Regular cleaning (weekly, bi-weekly)</span>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Limpieza regular (semanal, quincenal)</span><span data-lang="fr">Ménage régulier (hebdomadaire, bi-mensuel)</span><span data-lang="en">Regular cleaning (weekly, bi-weekly)</span></span>
           </li>
-          <li class="flex items-center justify-center gap-2">
-            <svg class="text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span data-lang="es">Limpieza a fondo</span>
-            <span data-lang="fr">Grand nettoyage de printemps</span>
-            <span data-lang="en">Deep cleaning</span>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Limpieza a fondo</span><span data-lang="fr">Grand nettoyage de printemps</span><span data-lang="en">Deep cleaning</span></span>
           </li>
-          <li class="flex items-center justify-center gap-2">
-            <svg class="text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span data-lang="es">Limpieza antes/después de mudanza</span>
-            <span data-lang="fr">Nettoyage avant/après déménagement</span>
-            <span data-lang="en">Move in/out cleaning</span>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Limpieza antes/después de mudanza</span><span data-lang="fr">Nettoyage avant/après déménagement</span><span data-lang="en">Move in/out cleaning</span></span>
           </li>
-          <li class="flex items-center justify-center gap-2">
-            <svg class="text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span data-lang="es">Mantenimiento de segundas residencias</span>
-            <span data-lang="fr">Entretien de résidences secondaires</span>
-            <span data-lang="en">Second home maintenance</span>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Mantenimiento de segundas residencias</span><span data-lang="fr">Entretien de résidences secondaires</span><span data-lang="en">Second home maintenance</span></span>
           </li>
-          <li class="flex items-center justify-center gap-2">
-            <svg class="text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span data-lang="es">Limpieza entre inquilinos</span>
-            <span data-lang="fr">Ménage entre locataires</span>
-            <span data-lang="en">Tenant turnover cleaning</span>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Limpieza entre inquilinos</span><span data-lang="fr">Ménage entre locataires</span><span data-lang="en">Tenant turnover cleaning</span></span>
           </li>
         </ul>
         <a href="#contact" class="text-primary font-bold hover:underline mt-auto">
@@ -360,29 +350,21 @@
           <span data-lang="en">Professionals</span>
         </h3>
         <ul class="space-y-3 text-sm text-on-surface-variant font-medium mb-8 flex-grow">
-          <li class="flex items-center justify-center gap-2">
-            <svg class="text-secondary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span data-lang="es">Oficinas y espacios de trabajo</span>
-            <span data-lang="fr">Bureaux et espaces de travail</span>
-            <span data-lang="en">Offices and workspaces</span>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Oficinas y espacios de trabajo</span><span data-lang="fr">Bureaux et espaces de travail</span><span data-lang="en">Offices and workspaces</span></span>
           </li>
-          <li class="flex items-center justify-center gap-2">
-            <svg class="text-secondary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span data-lang="es">Comercios y tiendas</span>
-            <span data-lang="fr">Commerces et boutiques</span>
-            <span data-lang="en">Shops and retail</span>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Comercios y tiendas</span><span data-lang="fr">Commerces et boutiques</span><span data-lang="en">Shops and retail</span></span>
           </li>
-          <li class="flex items-center justify-center gap-2">
-            <svg class="text-secondary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span data-lang="es">Restaurantes y cafés</span>
-            <span data-lang="fr">Restaurants et cafés</span>
-            <span data-lang="en">Restaurants and cafés</span>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Restaurantes y cafés</span><span data-lang="fr">Restaurants et cafés</span><span data-lang="en">Restaurants and cafés</span></span>
           </li>
-          <li class="flex items-center justify-center gap-2">
-            <svg class="text-secondary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span data-lang="es">Comunidades y zonas comunes</span>
-            <span data-lang="fr">Copropriétés et parties communes</span>
-            <span data-lang="en">Common areas and condos</span>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Comunidades y zonas comunes</span><span data-lang="fr">Copropriétés et parties communes</span><span data-lang="en">Common areas and condos</span></span>
           </li>
         </ul>
         <a href="#contact" class="text-secondary font-bold hover:underline mt-auto">
