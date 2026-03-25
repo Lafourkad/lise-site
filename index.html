@@ -50,10 +50,17 @@
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
-  .carousel-slide { display: none; }
-  .carousel-slide.active { display: block; }
-  @keyframes slideIn { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
-  .carousel-slide.active { animation: slideIn 0.6s ease-in-out; }
+  .carousel-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    pointer-events: none;
+  }
+  .carousel-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
   [data-lang="es"], [data-lang="fr"], [data-lang="en"] { display: none; }
   html[lang="es"] [data-lang="es"] { display: inline; }
   html[lang="fr"] [data-lang="fr"] { display: inline; }
