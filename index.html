@@ -68,6 +68,12 @@
   html[lang="es"] [data-lang="es"][data-block="true"] { display: block; }
   html[lang="fr"] [data-lang="fr"][data-block="true"] { display: block; }
   html[lang="en"] [data-lang="en"][data-block="true"] { display: block; }
+
+  [data-lang="de"], [data-lang="it"] { display: none; }
+  html[lang="de"] [data-lang="de"] { display: inline; }
+  html[lang="it"] [data-lang="it"] { display: inline; }
+  html[lang="de"] [data-lang="de"][data-block="true"] { display: block; }
+  html[lang="it"] [data-lang="it"][data-block="true"] { display: block; }
 </style>
 </head>
 <body class="bg-surface text-on-surface font-body">
@@ -78,7 +84,7 @@
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
     <span data-lang="es">¡Mensaje enviado! Te contactaremos pronto.</span>
     <span data-lang="fr">Message envoyé ! Nous vous répondons sous 24h.</span>
-    <span data-lang="en">Message sent! We'll get back to you soon.</span>
+    <span data-lang="en">Message sent! We'll get back to you soon.</span><span data-lang="de">Nachricht gesendet! Wir melden uns bald bei Ihnen.</span><span data-lang="it">Messaggio inviato! Vi risponderemo presto.</span>
   </div>
 </div>
 
@@ -93,22 +99,22 @@
       <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#services">
         <span data-lang="es">Servicios</span>
         <span data-lang="fr">Services</span>
-        <span data-lang="en">Services</span>
+        <span data-lang="en">Services</span><span data-lang="de">Leistungen</span><span data-lang="it">Servizi</span>
       </a>
       <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#expertise">
         <span data-lang="es">Por qué elegirnos</span>
         <span data-lang="fr">Notre expertise</span>
-        <span data-lang="en">Why us</span>
+        <span data-lang="en">Why us</span><span data-lang="de">Warum wir</span><span data-lang="it">Perché noi</span>
       </a>
       <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#about">
         <span data-lang="es">Sobre nosotros</span>
         <span data-lang="fr">À propos</span>
-        <span data-lang="en">About</span>
+        <span data-lang="en">About</span><span data-lang="de">Über uns</span><span data-lang="it">Chi siamo</span>
       </a>
       <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#contact">
         <span data-lang="es">Contacto</span>
         <span data-lang="fr">Contact</span>
-        <span data-lang="en">Contact</span>
+        <span data-lang="en">Contact</span><span data-lang="de">Kontakt</span><span data-lang="it">Contatto</span>
       </a>
     </div>
     <div class="flex items-center gap-2">
@@ -122,12 +128,14 @@
           <button onclick="setLang('es')" class="w-full px-4 py-2 text-left hover:bg-surface-container text-sm font-medium">Español</button>
           <button onclick="setLang('fr')" class="w-full px-4 py-2 text-left hover:bg-surface-container text-sm font-medium">Français</button>
           <button onclick="setLang('en')" class="w-full px-4 py-2 text-left hover:bg-surface-container text-sm font-medium">English</button>
+          <button onclick="setLang('de')" class="w-full px-4 py-2 text-left hover:bg-surface-container text-sm font-medium">Deutsch</button>
+          <button onclick="setLang('it')" class="w-full px-4 py-2 text-left hover:bg-surface-container text-sm font-medium">Italiano</button>
         </div>
       </div>
       <a href="#contact" class="bg-primary text-on-primary px-3 md:px-5 py-2 rounded-lg font-label font-bold text-sm transition-all hover:shadow-lg active:scale-95 whitespace-nowrap">
         <span data-lang="es">Presupuesto</span>
         <span data-lang="fr">Devis</span>
-        <span data-lang="en">Quote</span>
+        <span data-lang="en">Quote</span><span data-lang="de">Angebot</span><span data-lang="it">Preventivo</span>
       </a>
     </div>
   </div>
@@ -142,17 +150,17 @@
         <h1 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
           <span data-lang="es">Libera tu tiempo</span>
           <span data-lang="fr">Libérez votre temps</span>
-          <span data-lang="en">Free your time</span>
+          <span data-lang="en">Free your time</span><span data-lang="de">Befreien Sie Ihre Zeit</span><span data-lang="it">Liberate il vostro tempo</span>
         </h1>
         <p class="text-white/90 text-lg md:text-xl max-w-xl mb-8">
           <span data-lang="es">Servicio de limpieza profesional en Tenerife</span>
           <span data-lang="fr">Service de nettoyage professionnel à Tenerife</span>
-          <span data-lang="en">Professional cleaning service in Tenerife</span>
+          <span data-lang="en">Professional cleaning service in Tenerife</span><span data-lang="de">Professioneller Reinigungsservice auf Tenerife</span><span data-lang="it">Servizio di pulizia professionale a Tenerife</span>
         </p>
         <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all">
           <span data-lang="es">Solicitar presupuesto</span>
           <span data-lang="fr">Demander un devis</span>
-          <span data-lang="en">Request a quote</span>
+          <span data-lang="en">Request a quote</span><span data-lang="de">Angebot anfordern</span><span data-lang="it">Richiedi un preventivo</span>
         </a>
       </div>
     </div>
@@ -160,19 +168,19 @@
       <div class="absolute inset-0 bg-black/50"></div>
       <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-8">
         <h1 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
-          <span data-lang="es">Productos 100% ecológicos</span>
-          <span data-lang="fr">Produits 100% écologiques</span>
-          <span data-lang="en">100% Eco-friendly products</span>
+          <span data-lang="es">Limpieza 100% responsable</span>
+          <span data-lang="fr">Nettoyage 100% responsable</span>
+          <span data-lang="en">100% Responsible cleaning</span><span data-lang="de">100% Verantwortungsvolle Reinigung</span><span data-lang="it">Pulizia responsabile al 100%</span>
         </h1>
         <p class="text-white/90 text-lg md:text-xl max-w-xl mb-8">
-          <span data-lang="es">Certificados, no tóxicos, respetuosos con tu salud</span>
-          <span data-lang="fr">Certifiés, non toxiques, respectueux de votre santé</span>
-          <span data-lang="en">Certified, non-toxic, respectful of your health</span>
+          <span data-lang="es">Comprometidos con tu salud, tu hogar y el planeta</span>
+          <span data-lang="fr">Engagés pour votre santé, votre intérieur et la planète</span>
+          <span data-lang="en">Committed to your health, your home, and the planet</span><span data-lang="de">Verpflichtet für Ihre Gesundheit, Ihr Zuhause und den Planeten</span><span data-lang="it">Impegnati per la vostra salute, la vostra casa e il pianeta</span>
         </p>
         <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all">
           <span data-lang="es">Solicitar presupuesto</span>
           <span data-lang="fr">Demander un devis</span>
-          <span data-lang="en">Request a quote</span>
+          <span data-lang="en">Request a quote</span><span data-lang="de">Angebot anfordern</span><span data-lang="it">Richiedi un preventivo</span>
         </a>
       </div>
     </div>
@@ -182,17 +190,17 @@
         <h1 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
           <span data-lang="es">Particulares y Profesionales</span>
           <span data-lang="fr">Particuliers & Professionnels</span>
-          <span data-lang="en">Individuals & Professionals</span>
+          <span data-lang="en">Individuals & Professionals</span><span data-lang="de">Privat & Gewerbe</span><span data-lang="it">Privati e Professionisti</span>
         </h1>
         <p class="text-white/90 text-lg md:text-xl max-w-xl mb-8">
           <span data-lang="es">Soluciones adaptadas a cada necesidad</span>
           <span data-lang="fr">Des solutions adaptées à chaque besoin</span>
-          <span data-lang="en">Solutions tailored to every need</span>
+          <span data-lang="en">Solutions tailored to every need</span><span data-lang="de">Maßgeschneiderte Lösungen für jedes Bedürfnis</span><span data-lang="it">Soluzioni su misura per ogni esigenza</span>
         </p>
         <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all">
           <span data-lang="es">Solicitar presupuesto</span>
           <span data-lang="fr">Demander un devis</span>
-          <span data-lang="en">Request a quote</span>
+          <span data-lang="en">Request a quote</span><span data-lang="de">Angebot anfordern</span><span data-lang="it">Richiedi un preventivo</span>
         </a>
       </div>
     </div>
@@ -214,15 +222,15 @@
         <div class="text-white/80 text-sm font-medium uppercase tracking-wide mt-1">
           <span data-lang="es">Años de experiencia</span>
           <span data-lang="fr">Années d'expérience</span>
-          <span data-lang="en">Years of experience</span>
+          <span data-lang="en">Years of experience</span><span data-lang="de">Jahre Erfahrung</span><span data-lang="it">Anni di esperienza</span>
         </div>
       </div>
       <div>
         <div class="text-3xl md:text-4xl font-extrabold text-white font-headline">100%</div>
         <div class="text-white/80 text-sm font-medium uppercase tracking-wide mt-1">
-          <span data-lang="es">Productos ecológicos</span>
-          <span data-lang="fr">Produits écologiques</span>
-          <span data-lang="en">Eco-friendly products</span>
+          <span data-lang="es">Limpieza responsable</span>
+          <span data-lang="fr">Nettoyage responsable</span>
+          <span data-lang="en">Responsible cleaning</span><span data-lang="de">Verantwortungsvolle Reinigung</span><span data-lang="it">Pulizia responsabile</span>
         </div>
       </div>
     </div>
@@ -236,41 +244,49 @@
       <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
         <span data-lang="es">Quiénes somos</span>
         <span data-lang="fr">Qui sommes-nous</span>
-        <span data-lang="en">Who we are</span>
+        <span data-lang="en">Who we are</span><span data-lang="de">Wer wir sind</span><span data-lang="it">Chi siamo</span>
       </span>
       <h2 class="font-headline text-4xl font-bold text-on-surface mb-8">
         <span data-lang="es">La historia de Limpiezas y Soluciones</span>
         <span data-lang="fr">L'histoire de Limpiezas y Soluciones</span>
-        <span data-lang="en">The story of Limpiezas y Soluciones</span>
+        <span data-lang="en">The story of Limpiezas y Soluciones</span><span data-lang="de">Die Geschichte von Limpiezas y Soluciones</span><span data-lang="it">La storia di Limpiezas y Soluciones</span>
       </h2>
     </div>
     <div class="prose prose-lg max-w-none text-on-surface-variant leading-relaxed space-y-5">
       <p class="text-lg" data-lang="es" data-block="true">Todo comienza en 2016.</p>
       <p class="text-lg" data-lang="fr" data-block="true">C'est en 2016 que tout commence.</p>
       <p class="text-lg" data-lang="en" data-block="true">It all started in 2016.</p>
+<p class="text-lg" data-lang="de" data-block="true">Alles begann im Jahr 2016.</p>
+<p class="text-lg" data-lang="it" data-block="true">Tutto è iniziato nel 2016.</p>
       
       <p class="text-lg" data-lang="es" data-block="true">A los 18 años, Lise comienza a realizar limpiezas en empresas y hogares. Con su perseverancia y su gusto por el trabajo bien hecho, aprende todas las técnicas de limpieza.</p>
       <p class="text-lg" data-lang="fr" data-block="true">À 18 ans, Lise commence les ménages dans les entreprises et chez les particuliers. Avec sa persévérance et son goût du travail bien fait, elle apprend toutes les techniques de nettoyage.</p>
       <p class="text-lg" data-lang="en" data-block="true">At 18, Lise started cleaning for businesses and households. With perseverance and a commitment to quality work, she learned all cleaning techniques.</p>
+<p class="text-lg" data-lang="de" data-block="true">Mit 18 Jahren begann Lise mit der Reinigung in Unternehmen und Privathaushalten. Mit Ausdauer und ihrem Anspruch an qualitativ hochwertige Arbeit erlernte sie alle Reinigungstechniken.</p>
+<p class="text-lg" data-lang="it" data-block="true">A 18 anni, Lise ha iniziato a pulire per aziende e privati. Con perseveranza e l'impegno per un lavoro ben fatto, ha imparato tutte le tecniche di pulizia.</p>
       
       <p class="text-lg" data-lang="es" data-block="true">A los 24 años, tras una experiencia en un camping de lujo, decide lanzarse y poner en valor sus conocimientos y saber hacer al servicio de su propia clientela en Francia.</p>
       <p class="text-lg" data-lang="fr" data-block="true">À 24 ans, après une expérience dans un camping de luxe, elle décide de se lancer et de mettre à contribution ses connaissances et son savoir-faire au service de sa propre clientèle en France.</p>
       <p class="text-lg" data-lang="en" data-block="true">At 24, after an experience at a luxury campsite, she decided to start her own business, putting her knowledge and expertise to work for her own clientele in France.</p>
+<p class="text-lg" data-lang="de" data-block="true">Mit 24 Jahren, nach einer Erfahrung in einem Luxus-Campingplatz, beschloss sie, sich selbstständig zu machen und ihr Wissen und Können für eine eigene Kundschaft in Frankreich einzusetzen.</p>
+<p class="text-lg" data-lang="it" data-block="true">A 24 anni, dopo un'esperienza in un campeggio di lusso, ha deciso di lanciarsi e mettere a frutto le sue competenze per la propria clientela in Francia.</p>
       
       <p class="text-lg" data-lang="es" data-block="true">Hoy, es un nuevo reto el que Lise se lanza al alba de sus 29 años. Decide venir a trabajar a Tenerife y aprovechar sus diez años de experiencia para acompañar a profesionales y particulares en sus tareas domésticas.</p>
       <p class="text-lg" data-lang="fr" data-block="true">Aujourd'hui, c'est un nouveau challenge que Lise se lance à l'aube de ses 29 ans. Elle décide de venir travailler à Tenerife et de mettre à profit ses dix ans d'expérience pour accompagner professionnels comme particuliers dans leurs tâches ménagères.</p>
       <p class="text-lg" data-lang="en" data-block="true">Today, Lise is taking on a new challenge at 29. She decided to come work in Tenerife, using her ten years of experience to help both professionals and individuals with their cleaning needs.</p>
+<p class="text-lg" data-lang="de" data-block="true">Heute stellt sich Lise mit 29 einer neuen Herausforderung. Sie beschloss, auf Tenerife zu arbeiten und ihre zehnjährige Erfahrung sowohl Gewerbetreibenden als auch Privatkunden bei ihren Reinigungsbedürfnissen zur Verfügung zu stellen.</p>
+<p class="text-lg" data-lang="it" data-block="true">Oggi, Lise si lancia in una nuova sfida a 29 anni. Ha deciso di venire a lavorare a Tenerife, mettendo a frutto i suoi dieci anni di esperienza per accompagnare professionisti e privati nelle loro esigenze di pulizia.</p>
     </div>
     <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12">
       <a href="#services" class="bg-primary text-on-primary px-7 py-3.5 rounded-lg font-bold transition-all hover:shadow-xl hover:-translate-y-1 text-center">
         <span data-lang="es">Nuestros servicios</span>
         <span data-lang="fr">Nos services</span>
-        <span data-lang="en">Our services</span>
+        <span data-lang="en">Our services</span><span data-lang="de">Unsere Leistungen</span><span data-lang="it">I nostri servizi</span>
       </a>
       <a href="#contact" class="bg-surface-container text-on-surface px-7 py-3.5 rounded-lg font-bold transition-all hover:bg-surface-container-high text-center">
         <span data-lang="es">Contactar</span>
         <span data-lang="fr">Nous contacter</span>
-        <span data-lang="en">Contact us</span>
+        <span data-lang="en">Contact us</span><span data-lang="de">Kontaktieren Sie uns</span><span data-lang="it">Contattaci</span>
       </a>
     </div>
   </div>
@@ -283,17 +299,17 @@
       <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
         <span data-lang="es">Nuestras experticias</span>
         <span data-lang="fr">Nos expertises</span>
-        <span data-lang="en">Our expertise</span>
+        <span data-lang="en">Our expertise</span><span data-lang="de">Unsere Expertise</span><span data-lang="it">La nostra competenza</span>
       </span>
       <h2 class="font-headline text-4xl font-bold text-on-surface mb-4">
         <span data-lang="es">Descubre todas nuestras experticias</span>
         <span data-lang="fr">Découvrez toutes nos expertises</span>
-        <span data-lang="en">Discover all our expertise</span>
+        <span data-lang="en">Discover all our expertise</span><span data-lang="de">Entdecken Sie unsere gesamte Expertise</span><span data-lang="it">Scoprite tutte le nostre competenze</span>
       </h2>
       <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">
         <span data-lang="es">Nuestra misión es acompañar a nuestros clientes hacia entornos siempre más sanos, seguros y fiables.</span>
         <span data-lang="fr">Notre mission est d'accompagner nos clients dans des environnements toujours plus sains, sûrs et fiables.</span>
-        <span data-lang="en">Our mission is to help our clients maintain healthier, safer, and more reliable environments.</span>
+        <span data-lang="en">Our mission is to help our clients maintain healthier, safer, and more reliable environments.</span><span data-lang="de">Unsere Mission ist es, unsere Kunden zu gesünderen, sichereren und zuverlässigeren Umgebungen zu begleiten.</span><span data-lang="it">La nostra missione è accompagnare i nostri clienti verso ambienti sempre più sani, sicuri e affidabili.</span>
       </p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -305,38 +321,38 @@
         <h3 class="font-headline text-2xl font-bold mb-4">
           <span data-lang="es">Particulares</span>
           <span data-lang="fr">Particuliers</span>
-          <span data-lang="en">Individuals</span>
+          <span data-lang="en">Individuals</span><span data-lang="de">Privatkunden</span><span data-lang="it">Privati</span>
         </h3>
         <ul class="space-y-3 text-sm text-on-surface-variant font-medium mb-8 flex-grow">
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Limpieza en profundidad</span><span data-lang="fr">Nettoyage en profondeur</span><span data-lang="en">Deep cleaning</span></span>
+            <span><span data-lang="es">Limpieza en profundidad</span><span data-lang="fr">Nettoyage en profondeur</span><span data-lang="en">Deep cleaning</span><span data-lang="de">Tiefenreinigung</span><span data-lang="it">Pulizia profonda</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Limpieza puntual</span><span data-lang="fr">Nettoyage ponctuel</span><span data-lang="en">One-off cleaning</span></span>
+            <span><span data-lang="es">Limpieza puntual</span><span data-lang="fr">Nettoyage ponctuel</span><span data-lang="en">One-off cleaning</span><span data-lang="de">Einmalige Reinigung</span><span data-lang="it">Pulizia occasionale</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Limpieza antes/después de mudanza</span><span data-lang="fr">Nettoyage avant/après déménagement</span><span data-lang="en">Move in/out cleaning</span></span>
+            <span><span data-lang="es">Limpieza antes/después de mudanza</span><span data-lang="fr">Nettoyage avant/après déménagement</span><span data-lang="en">Move in/out cleaning</span><span data-lang="de">Reinigung bei Ein-/Auszug</span><span data-lang="it">Pulizia trasloco</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Mantenimiento de segundas residencias</span><span data-lang="fr">Entretien résidence secondaire</span><span data-lang="en">Second home maintenance</span></span>
+            <span><span data-lang="es">Mantenimiento de segundas residencias</span><span data-lang="fr">Entretien résidence secondaire</span><span data-lang="en">Second home maintenance</span><span data-lang="de">Zweitwohnungspflege</span><span data-lang="it">Manutenzione seconda casa</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Limpieza entre inquilinos</span><span data-lang="fr">Ménage entre locataires</span><span data-lang="en">Tenant turnover cleaning</span></span>
+            <span><span data-lang="es">Limpieza entre inquilinos</span><span data-lang="fr">Ménage entre locataires</span><span data-lang="en">Tenant turnover cleaning</span><span data-lang="de">Reinigung bei Mieterwechsel</span><span data-lang="it">Pulizia cambio inquilino</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Limpieza de asientos de coche, colchones, alfombras, sofás</span><span data-lang="fr">Nettoyage sièges de voiture, matelas, tapis, canapés</span><span data-lang="en">Car seats, mattresses, carpets, sofas cleaning</span></span>
+            <span><span data-lang="es">Limpieza de asientos de coche, colchones, alfombras, sofás</span><span data-lang="fr">Nettoyage sièges de voiture, matelas, tapis, canapés</span><span data-lang="en">Car seats, mattresses, carpets, sofas cleaning</span><span data-lang="de">Autositze, Matratzen, Teppiche, Sofas Reinigung</span><span data-lang="it">Pulizia sedili auto, materassi, tappeti, divani</span></span>
           </li>
         </ul>
         <a href="#contact" class="text-primary font-bold hover:underline mt-auto">
           <span data-lang="es">Más información →</span>
           <span data-lang="fr">En savoir plus →</span>
-          <span data-lang="en">Learn more →</span>
+          <span data-lang="en">Learn more →</span><span data-lang="de">Mehr erfahren →</span><span data-lang="it">Scopri di più →</span>
         </a>
       </div>
       <!-- Professionnels -->
@@ -347,34 +363,34 @@
         <h3 class="font-headline text-2xl font-bold mb-4">
           <span data-lang="es">Profesionales</span>
           <span data-lang="fr">Professionnels</span>
-          <span data-lang="en">Professionals</span>
+          <span data-lang="en">Professionals</span><span data-lang="de">Gewerbekunden</span><span data-lang="it">Professionisti</span>
         </h3>
         <ul class="space-y-3 text-sm text-on-surface-variant font-medium mb-8 flex-grow">
           <li class="flex items-start gap-2 text-left">
             <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Oficinas y espacios de trabajo</span><span data-lang="fr">Bureaux et espaces de travail</span><span data-lang="en">Offices and workspaces</span></span>
+            <span><span data-lang="es">Oficinas y espacios de trabajo</span><span data-lang="fr">Bureaux et espaces de travail</span><span data-lang="en">Offices and workspaces</span><span data-lang="de">Büros und Arbeitsplätze</span><span data-lang="it">Uffici e spazi di lavoro</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Comercios y tiendas</span><span data-lang="fr">Commerces et boutiques</span><span data-lang="en">Shops and retail</span></span>
+            <span><span data-lang="es">Comercios y tiendas</span><span data-lang="fr">Commerces et boutiques</span><span data-lang="en">Shops and retail</span><span data-lang="de">Geschäfte und Einzelhandel</span><span data-lang="it">Negozi e attività commerciali</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Restaurantes y cafés</span><span data-lang="fr">Restaurants et cafés</span><span data-lang="en">Restaurants and cafés</span></span>
+            <span><span data-lang="es">Restaurantes y cafés</span><span data-lang="fr">Restaurants et cafés</span><span data-lang="en">Restaurants and cafés</span><span data-lang="de">Restaurants und Cafés</span><span data-lang="it">Ristoranti e caffè</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Comunidades y zonas comunes</span><span data-lang="fr">Copropriétés et parties communes</span><span data-lang="en">Common areas and condos</span></span>
+            <span><span data-lang="es">Comunidades y zonas comunes</span><span data-lang="fr">Copropriétés et parties communes</span><span data-lang="en">Common areas and condos</span><span data-lang="de">Gemeinschaftsflächen und Wohngemeinschaften</span><span data-lang="it">Aree comuni e condomini</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Limpieza entre inquilinos</span><span data-lang="fr">Nettoyage entre locataires</span><span data-lang="en">Tenant turnover cleaning</span></span>
+            <span><span data-lang="es">Limpieza entre inquilinos</span><span data-lang="fr">Nettoyage entre locataires</span><span data-lang="en">Tenant turnover cleaning</span><span data-lang="de">Reinigung bei Mieterwechsel</span><span data-lang="it">Pulizia cambio inquilino</span></span>
           </li>
         </ul>
         <a href="#contact" class="text-secondary font-bold hover:underline mt-auto">
           <span data-lang="es">Más información →</span>
           <span data-lang="fr">En savoir plus →</span>
-          <span data-lang="en">Learn more →</span>
+          <span data-lang="en">Learn more →</span><span data-lang="de">Mehr erfahren →</span><span data-lang="it">Scopri di più →</span>
         </a>
       </div>
       <!-- Ménage profond -->
@@ -385,30 +401,30 @@
         <h3 class="font-headline text-2xl font-bold mb-4">
           <span data-lang="es">Limpieza profunda</span>
           <span data-lang="fr">Ménage profond</span>
-          <span data-lang="en">Deep cleaning</span>
+          <span data-lang="en">Deep cleaning</span><span data-lang="de">Tiefenreinigung</span><span data-lang="it">Pulizia profonda</span>
         </h3>
         <ul class="space-y-3 text-sm text-on-surface-variant font-medium mb-8 flex-grow">
           <li class="flex items-start gap-2 text-left">
             <svg class="text-tertiary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Despejo</span><span data-lang="fr">Désencombrement</span><span data-lang="en">Decluttering</span></span>
+            <span><span data-lang="es">Despejo</span><span data-lang="fr">Désencombrement</span><span data-lang="en">Decluttering</span><span data-lang="de">Entrümpelung</span><span data-lang="it">Svuotamento</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-tertiary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Desinfección</span><span data-lang="fr">Désinfection</span><span data-lang="en">Disinfection</span></span>
+            <span><span data-lang="es">Desinfección</span><span data-lang="fr">Désinfection</span><span data-lang="en">Disinfection</span><span data-lang="de">Desinfektion</span><span data-lang="it">Disinfezione</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-tertiary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Técnicas y equipos especializados para un desengrase profundo y ecológico</span><span data-lang="fr">Utilisation de techniques et matériels spécialisés pour un décapage profond et écologique</span><span data-lang="en">Specialized techniques and equipment for deep, eco-friendly stripping</span></span>
+            <span><span data-lang="es">Técnicas y equipos especializados para un desengrase profundo y ecológico</span><span data-lang="fr">Utilisation de techniques et matériels spécialisés pour un décapage profond et écologique</span><span data-lang="en">Specialized techniques and equipment for deep, eco-friendly stripping</span><span data-lang="de">Spezialisierte Techniken und Ausrüstung für tiefes, umweltfreundliches Entfernen von Fettablagerungen</span><span data-lang="it">Tecniche e attrezzature specializzate per una sverniciatura profonda ed ecologica</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-tertiary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Limpieza de fin de obra</span><span data-lang="fr">Nettoyage de fin de chantier</span><span data-lang="en">Post-construction cleaning</span></span>
+            <span><span data-lang="es">Limpieza de fin de obra</span><span data-lang="fr">Nettoyage de fin de chantier</span><span data-lang="en">Post-construction cleaning</span><span data-lang="de">Bauendreinigung</span><span data-lang="it">Pulizia post-cantiere</span></span>
           </li>
         </ul>
         <a href="#contact" class="text-tertiary font-bold hover:underline mt-auto">
           <span data-lang="es">Más información →</span>
           <span data-lang="fr">En savoir plus →</span>
-          <span data-lang="en">Learn more →</span>
+          <span data-lang="en">Learn more →</span><span data-lang="de">Mehr erfahren →</span><span data-lang="it">Scopri di più →</span>
         </a>
       </div>
     </div>
@@ -422,12 +438,12 @@
       <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
         <span data-lang="es">Por qué elegirnos</span>
         <span data-lang="fr">Pourquoi nous choisir</span>
-        <span data-lang="en">Why choose us</span>
+        <span data-lang="en">Why choose us</span><span data-lang="de">Warum uns wählen</span><span data-lang="it">Perché sceglierci</span>
       </span>
       <h2 class="font-headline text-4xl font-bold text-on-surface">
         <span data-lang="es">¿Por qué elegir Limpiezas y Soluciones?</span>
         <span data-lang="fr">Pourquoi choisir Limpiezas y Soluciones ?</span>
-        <span data-lang="en">Why choose Limpiezas y Soluciones?</span>
+        <span data-lang="en">Why choose Limpiezas y Soluciones?</span><span data-lang="de">Warum Limpiezas y Soluciones wählen?</span><span data-lang="it">Perché scegliere Limpiezas y Soluciones?</span>
       </h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -439,12 +455,12 @@
           <h3 class="font-headline text-xl font-bold text-on-surface mb-3">
             <span data-lang="es">La proximidad</span>
             <span data-lang="fr">La proximité</span>
-            <span data-lang="en">Proximity</span>
+            <span data-lang="en">Proximity</span><span data-lang="de">Nähe</span><span data-lang="it">Vicinanza</span>
           </h3>
           <p class="text-on-surface-variant text-sm leading-relaxed">
-            <span data-lang="es">Basados en Tenerife Norte, intervenimos rápidamente en toda la zona. Te garantizamos gran reactividad y personalización de nuestros servicios según tus necesidades locales.</span>
-            <span data-lang="fr">Basés à Tenerife Nord, nous intervenons rapidement dans toute la zone. Nous vous assurons une grande réactivité et une personnalisation de nos services en fonction de vos besoins locaux.</span>
-            <span data-lang="en">Based in North Tenerife, we respond quickly throughout the area. We guarantee great responsiveness and customized services based on your local needs.</span>
+            <span data-lang="es">Basados en Tenerife, intervenimos rápidamente en toda la zona. Te garantizamos gran reactividad y personalización de nuestros servicios según tus necesidades locales.</span>
+            <span data-lang="fr">Basés à Tenerife, nous intervenons rapidement dans toute la zone. Nous vous assurons une grande réactivité et une personnalisation de nos services en fonction de vos besoins locaux.</span>
+            <span data-lang="en">Based in Tenerife, we respond quickly throughout the area. We guarantee great responsiveness and customized services based on your local needs.</span><span data-lang="de">Wir sind auf Tenerife ansässig und reagieren schnell in der gesamten Region. Wir garantieren hohe Reaktionsgeschwindigkeit und maßgeschneiderte Dienstleistungen nach Ihren örtlichen Bedürfnissen.</span><span data-lang="it">Operiamo a Tenerife e interveniamo rapidamente in tutta la zona. Garantiamo grande reattività e personalizzazione dei servizi in base alle vostre esigenze locali.</span>
           </p>
         </div>
       </div>
@@ -456,12 +472,12 @@
           <h3 class="font-headline text-xl font-bold text-on-surface mb-3">
             <span data-lang="es">La escucha</span>
             <span data-lang="fr">L'écoute</span>
-            <span data-lang="en">Listening</span>
+            <span data-lang="en">Listening</span><span data-lang="de">Zuhören</span><span data-lang="it">Ascolto</span>
           </h3>
           <p class="text-on-surface-variant text-sm leading-relaxed">
             <span data-lang="es">Cada cliente es único. Nos tomamos el tiempo para comprender tus necesidades y proponerte soluciones a medida. Tu satisfacción es nuestra prioridad.</span>
             <span data-lang="fr">Chaque client est unique. Nous prenons le temps de comprendre vos besoins pour vous proposer des solutions sur mesure. Votre satisfaction est notre priorité.</span>
-            <span data-lang="en">Every client is unique. We take the time to understand your needs and offer tailored solutions. Your satisfaction is our priority.</span>
+            <span data-lang="en">Every client is unique. We take the time to understand your needs and offer tailored solutions. Your satisfaction is our priority.</span><span data-lang="de">Jeder Kunde ist einzigartig. Wir nehmen uns Zeit, Ihre Bedürfnisse zu verstehen, und bieten maßgeschneiderte Lösungen. Ihre Zufriedenheit hat für uns oberste Priorität.</span><span data-lang="it">Ogni cliente è unico. Ci prendiamo il tempo di comprendere le vostre esigenze e proporvi soluzioni su misura. La vostra soddisfazione è la nostra priorità.</span>
           </p>
         </div>
       </div>
@@ -473,12 +489,12 @@
           <h3 class="font-headline text-xl font-bold text-on-surface mb-3">
             <span data-lang="es">La confianza</span>
             <span data-lang="fr">La confiance</span>
-            <span data-lang="en">Trust</span>
+            <span data-lang="en">Trust</span><span data-lang="de">Vertrauen</span><span data-lang="it">Fiducia</span>
           </h3>
           <p class="text-on-surface-variant text-sm leading-relaxed">
             <span data-lang="es">Construimos cada día una relación de confianza con nuestros clientes, gracias a la escucha, la transparencia y nuestra capacidad para cumplir nuestros compromisos.</span>
             <span data-lang="fr">Nous construisons chaque jour une relation de confiance avec nos clients, grâce à l'écoute, la transparence, et notre capacité à tenir nos engagements.</span>
-            <span data-lang="en">We build a relationship of trust with our clients every day through listening, transparency, and our ability to keep our commitments.</span>
+            <span data-lang="en">We build a relationship of trust with our clients every day through listening, transparency, and our ability to keep our commitments.</span><span data-lang="de">Wir bauen jeden Tag eine Vertrauensbeziehung zu unseren Kunden auf — durch Zuhören, Transparenz und unsere Fähigkeit, Zusagen einzuhalten.</span><span data-lang="it">Costruiamo ogni giorno una relazione di fiducia con i nostri clienti, grazie all'ascolto, alla trasparenza e alla capacità di mantenere i nostri impegni.</span>
           </p>
         </div>
       </div>
@@ -497,17 +513,17 @@
       <h2 class="font-headline text-3xl md:text-4xl font-bold mb-5">
         <span data-lang="es">La limpieza es fundamental</span>
         <span data-lang="fr">La propreté, c'est fondamental</span>
-        <span data-lang="en">Cleanliness is fundamental</span>
+        <span data-lang="en">Cleanliness is fundamental</span><span data-lang="de">Sauberkeit ist grundlegend</span><span data-lang="it">La pulizia è fondamentale</span>
       </h2>
       <p class="text-lg opacity-80 max-w-2xl mx-auto font-light mb-10">
-        <span data-lang="es">Nuestras soluciones de limpieza utilizan exclusivamente productos 100% ecológicos, certificados y no tóxicos. Respetuosos con tu salud y el medio ambiente, nuestros productos garantizan resultados profesionales preservando el planeta.</span>
-        <span data-lang="fr">Nos solutions de nettoyage utilisent exclusivement des produits 100% écologiques, certifiés et non toxiques. Respectueux de votre santé et de l'environnement, nos produits garantissent des résultats professionnels tout en préservant la planète.</span>
-        <span data-lang="en">Our cleaning solutions use exclusively 100% eco-friendly, certified, and non-toxic products. Respectful of your health and the environment, our products guarantee professional results while preserving the planet.</span>
+        <span data-lang="es">Nuestras soluciones de limpieza son 100% responsables: utilizamos técnicas y productos que protegen tu salud y respetan el medio ambiente, sin comprometer los resultados profesionales.</span>
+        <span data-lang="fr">Nos solutions de nettoyage sont 100% responsables : nous utilisons des techniques et produits qui protègent votre santé et respectent l'environnement, sans compromettre la qualité professionnelle.</span>
+        <span data-lang="en">Our cleaning solutions are 100% responsible: we use techniques and products that protect your health and respect the environment, without compromising professional quality.</span><span data-lang="de">Unsere Reinigungslösungen sind 100% verantwortungsvoll: Wir verwenden Techniken und Produkte, die Ihre Gesundheit schützen und die Umwelt schonen, ohne professionelle Qualität zu beeinträchtigen.</span><span data-lang="it">Le nostre soluzioni di pulizia sono responsabili al 100%: utilizziamo tecniche e prodotti che proteggono la vostra salute e rispettano l'ambiente, senza compromettere la qualità professionale.</span>
       </p>
       <a href="#contact" class="bg-primary text-white px-10 py-4 rounded-lg font-bold hover:bg-primary-container transition-all hover:scale-105 inline-block">
         <span data-lang="es">Descubrir nuestras soluciones</span>
         <span data-lang="fr">Découvrir nos solutions</span>
-        <span data-lang="en">Discover our solutions</span>
+        <span data-lang="en">Discover our solutions</span><span data-lang="de">Entdecken Sie unsere Lösungen</span><span data-lang="it">Scoprite le nostre soluzioni</span>
       </a>
     </div>
   </div>
@@ -520,14 +536,14 @@
     <p class="text-on-surface text-xl md:text-2xl font-medium leading-relaxed mb-8 italic">
       <span data-lang="es">"Necesitaba una limpieza completa después de una mudanza y fueron muy reactivos a pesar de la solicitud tardía. ¡Resultado impecable! Gracias Lise"</span>
       <span data-lang="fr">"J'avais besoin d'un nettoyage complet après un déménagement et ils ont été très réactifs malgré une demande tardive. Résultat impeccable ! Merci Lise"</span>
-      <span data-lang="en">"I needed a complete cleaning after moving and they were very responsive despite the late request. Impeccable result! Thank you Lise"</span>
+      <span data-lang="en">"I needed a complete cleaning after moving and they were very responsive despite the late request. Impeccable result! Thank you Lise"</span><span data-lang="de">"Ich brauchte eine Komplettreinigung nach dem Umzug und sie waren trotz kurzfristiger Anfrage sehr reaktiv. Makelloses Ergebnis! Danke, Lise"</span><span data-lang="it">"Avevo bisogno di una pulizia completa dopo un trasloco e sono stati molto reattivi nonostante la richiesta tardiva. Risultato impeccabile! Grazie Lise"</span>
     </p>
     <div>
       <p class="font-bold text-on-surface text-lg">Monica M.</p>
       <p class="text-on-surface-variant text-sm">
-        <span data-lang="es">Tenerife Norte</span>
-        <span data-lang="fr">Tenerife Nord</span>
-        <span data-lang="en">North Tenerife</span>
+        <span data-lang="es">Tenerife</span>
+        <span data-lang="fr">Tenerife</span>
+        <span data-lang="en">Tenerife</span><span data-lang="de">Tenerife</span><span data-lang="it">Tenerife</span>
       </p>
     </div>
   </div>
@@ -541,17 +557,17 @@
         <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
           <span data-lang="es">Contactar</span>
           <span data-lang="fr">Nous contacter</span>
-          <span data-lang="en">Contact us</span>
+          <span data-lang="en">Contact us</span><span data-lang="de">Kontaktieren Sie uns</span><span data-lang="it">Contattaci</span>
         </span>
         <h2 class="font-headline text-4xl font-bold text-on-surface mb-6">
           <span data-lang="es">Solicita tu presupuesto gratis</span>
           <span data-lang="fr">Demandez votre devis gratuit</span>
-          <span data-lang="en">Request your free quote</span>
+          <span data-lang="en">Request your free quote</span><span data-lang="de">Fordern Sie Ihr kostenloses Angebot an</span><span data-lang="it">Richiedi il tuo preventivo gratuito</span>
         </h2>
         <p class="text-on-surface-variant text-lg leading-relaxed mb-10">
           <span data-lang="es">Contáctanos para recibir una estimación gratuita y sin compromiso, adaptada a tus necesidades específicas.</span>
           <span data-lang="fr">Contactez-nous pour recevoir une estimation gratuite et sans engagement, adaptée à vos besoins spécifiques.</span>
-          <span data-lang="en">Contact us for a free, no-obligation estimate tailored to your specific needs.</span>
+          <span data-lang="en">Contact us for a free, no-obligation estimate tailored to your specific needs.</span><span data-lang="de">Kontaktieren Sie uns für eine kostenlose, unverbindliche Schätzung, die auf Ihre spezifischen Bedürfnisse zugeschnitten ist.</span><span data-lang="it">Contattateci per ricevere una stima gratuita e senza impegno, adattata alle vostre esigenze specifiche.</span>
         </p>
         <div class="space-y-6">
           <div class="flex items-center gap-4">
@@ -571,12 +587,12 @@
               <h4 class="font-bold text-on-surface">
                 <span data-lang="es">Zona de intervención</span>
                 <span data-lang="fr">Zone d'intervention</span>
-                <span data-lang="en">Service area</span>
+                <span data-lang="en">Service area</span><span data-lang="de">Einsatzgebiet</span><span data-lang="it">Zona di intervento</span>
               </h4>
               <p class="text-on-surface-variant text-sm">
-                <span data-lang="es">Tenerife Norte</span>
-                <span data-lang="fr">Tenerife Nord</span>
-                <span data-lang="en">North Tenerife</span>
+                <span data-lang="es">Tenerife</span>
+                <span data-lang="fr">Tenerife</span>
+                <span data-lang="en">Tenerife</span><span data-lang="de">Tenerife</span><span data-lang="it">Tenerife</span>
               </p>
             </div>
           </div>
@@ -588,12 +604,12 @@
               <h4 class="font-bold text-on-surface">
                 <span data-lang="es">Horario</span>
                 <span data-lang="fr">Horaires</span>
-                <span data-lang="en">Hours</span>
+                <span data-lang="en">Hours</span><span data-lang="de">Öffnungszeiten</span><span data-lang="it">Orari</span>
               </h4>
               <p class="text-on-surface-variant text-sm">
-                <span data-lang="es">Lunes – Sábado · 8h00 – 19h00</span>
-                <span data-lang="fr">Lundi – Samedi · 8h00 – 19h00</span>
-                <span data-lang="en">Monday – Saturday · 8am – 7pm</span>
+                <span data-lang="es">Lunes – Viernes · 9h00 – 18h00</span>
+                <span data-lang="fr">Lundi – Vendredi · 9h00 – 18h00</span>
+                <span data-lang="en">Monday – Friday · 9am – 6pm</span><span data-lang="de">Montag – Freitag · 9:00 – 18:00 Uhr</span><span data-lang="it">Lunedì – Venerdì · 9:00 – 18:00</span>
               </p>
             </div>
           </div>
@@ -603,12 +619,12 @@
         <h3 class="font-headline text-2xl font-bold text-on-surface mb-6">
           <span data-lang="es">¿Necesitas un presupuesto personalizado?</span>
           <span data-lang="fr">Besoin d'un devis personnalisé ?</span>
-          <span data-lang="en">Need a personalized quote?</span>
+          <span data-lang="en">Need a personalized quote?</span><span data-lang="de">Benötigen Sie ein individuelles Angebot?</span><span data-lang="it">Hai bisogno di un preventivo personalizzato?</span>
         </h3>
         <p class="text-on-surface-variant mb-8">
           <span data-lang="es">Envíanos un mensaje y te respondemos en 24h.</span>
           <span data-lang="fr">Envoyez-nous un message et nous vous répondons sous 24h.</span>
-          <span data-lang="en">Send us a message and we'll respond within 24h.</span>
+          <span data-lang="en">Send us a message and we'll respond within 24h.</span><span data-lang="de">Senden Sie uns eine Nachricht und wir antworten innerhalb von 24 Stunden.</span><span data-lang="it">Inviaci un messaggio e ti risponderemo entro 24 ore.</span>
         </p>
         <form action="https://formsubmit.co/info@limpiezasysoluciones.com" method="POST" class="space-y-4">
           <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto - Limpiezas y Soluciones"/>
@@ -629,12 +645,12 @@
           <button type="submit" class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:bg-primary-container transition-all hover:shadow-lg active:scale-[0.98]">
             <span data-lang="es">Solicitar presupuesto gratis</span>
             <span data-lang="fr">Demander un devis gratuit</span>
-            <span data-lang="en">Request free quote</span>
+            <span data-lang="en">Request free quote</span><span data-lang="de">Kostenloses Angebot anfordern</span><span data-lang="it">Richiedi preventivo gratuito</span>
           </button>
           <p class="text-center text-xs text-on-surface-variant italic">
             <span data-lang="es">Respuesta garantizada en 24h · Presupuesto gratis y sin compromiso</span>
             <span data-lang="fr">Réponse garantie sous 24h · Devis gratuit et sans engagement</span>
-            <span data-lang="en">Response within 24h · Free and no-obligation quote</span>
+            <span data-lang="en">Response within 24h · Free and no-obligation quote</span><span data-lang="de">Antwort innerhalb von 24h · Kostenlos und unverbindlich</span><span data-lang="it">Risposta entro 24 ore · Preventivo gratuito e senza impegno</span>
           </p>
         </form>
       </div>
@@ -652,27 +668,27 @@
           <span class="text-xl font-extrabold text-primary font-headline">Limpiezas y Soluciones</span>
         </div>
         <p class="text-slate-400 text-sm leading-relaxed">
-          <span data-lang="es">Servicios de limpieza profesionales en Tenerife Norte. Particulares y profesionales.</span>
-          <span data-lang="fr">Services de nettoyage professionnels à Tenerife Nord. Particuliers et professionnels.</span>
-          <span data-lang="en">Professional cleaning services in North Tenerife. Individuals and professionals.</span>
+          <span data-lang="es">Servicios de limpieza profesionales en Tenerife. Particulares y profesionales.</span>
+          <span data-lang="fr">Services de nettoyage professionnels à Tenerife. Particuliers et professionnels.</span>
+          <span data-lang="en">Professional cleaning services in Tenerife. Individuals and professionals.</span><span data-lang="de">Professionelle Reinigungsdienstleistungen auf Tenerife. Privat- und Gewerbekunden.</span><span data-lang="it">Servizi di pulizia professionali a Tenerife. Privati e professionisti.</span>
         </p>
       </div>
       <div>
         <h4 class="text-sm font-bold tracking-wide uppercase text-primary mb-5">
           <span data-lang="es">Servicios</span>
           <span data-lang="fr">Services</span>
-          <span data-lang="en">Services</span>
+          <span data-lang="en">Services</span><span data-lang="de">Leistungen</span><span data-lang="it">Servizi</span>
         </h4>
         <ul class="space-y-3">
           <li><a href="#services" class="text-sm text-slate-400 hover:text-primary transition-colors">
             <span data-lang="es">Particulares</span>
             <span data-lang="fr">Particuliers</span>
-            <span data-lang="en">Individuals</span>
+            <span data-lang="en">Individuals</span><span data-lang="de">Privatkunden</span><span data-lang="it">Privati</span>
           </a></li>
           <li><a href="#services" class="text-sm text-slate-400 hover:text-primary transition-colors">
             <span data-lang="es">Profesionales</span>
             <span data-lang="fr">Professionnels</span>
-            <span data-lang="en">Professionals</span>
+            <span data-lang="en">Professionals</span><span data-lang="de">Gewerbekunden</span><span data-lang="it">Professionisti</span>
           </a></li>
         </ul>
       </div>
@@ -680,17 +696,17 @@
         <h4 class="text-sm font-bold tracking-wide uppercase text-primary mb-5">
           <span data-lang="es">Contacto</span>
           <span data-lang="fr">Contact</span>
-          <span data-lang="en">Contact</span>
+          <span data-lang="en">Contact</span><span data-lang="de">Kontakt</span><span data-lang="it">Contatto</span>
         </h4>
         <div class="space-y-3">
           <p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">mail</span> info@limpiezasysoluciones.com</p>
-          <p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">location_on</span> <span data-lang="es">Tenerife Norte</span><span data-lang="fr">Tenerife Nord</span><span data-lang="en">North Tenerife</span></p>
-          <p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">schedule</span> <span data-lang="es">Lun–Sáb · 8h–19h</span><span data-lang="fr">Lun–Sam · 8h–19h</span><span data-lang="en">Mon–Sat · 8am–7pm</span></p>
+          <p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">location_on</span> <span data-lang="es">Tenerife</span><span data-lang="fr">Tenerife</span><span data-lang="en">Tenerife</span><span data-lang="de">Tenerife</span><span data-lang="it">Tenerife</span></p>
+          <p class="flex items-center gap-2 text-sm text-slate-400"><span class="material-symbols-outlined text-primary text-base">schedule</span> <span data-lang="es">Lun–Sáb · 8h–19h</span><span data-lang="fr">Lun–Sam · 8h–19h</span><span data-lang="en">Mon–Sat · 8am–7pm</span><span data-lang="de">Mo–Sa · 8:00–19:00 Uhr</span><span data-lang="it">Lun–Sab · 8:00–19:00</span></p>
         </div>
       </div>
     </div>
     <div class="border-t border-slate-800 pt-8 text-center">
-      <p class="text-xs text-slate-500 uppercase tracking-widest">© 2025 Limpiezas y Soluciones Tenerife — <span data-lang="es">Todos los derechos reservados</span><span data-lang="fr">Tous droits réservés</span><span data-lang="en">All rights reserved</span></p>
+      <p class="text-xs text-slate-500 uppercase tracking-widest">© 2025 Limpiezas y Soluciones Tenerife — <span data-lang="es">Todos los derechos reservados</span><span data-lang="fr">Tous droits réservés</span><span data-lang="en">All rights reserved</span><span data-lang="de">Alle Rechte vorbehalten</span><span data-lang="it">Tutti i diritti riservati</span></p>
     </div>
   </div>
 </footer>
