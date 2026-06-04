@@ -196,33 +196,12 @@
         </a>
       </div>
     </div>
-    <div class="carousel-slide absolute inset-0" style="background: url('photo4.jpg') center/cover no-repeat;">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-8">
-        <h1 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
-          <span data-lang="es">10 años de experiencia</span>
-          <span data-lang="fr">10 ans d'expérience</span>
-          <span data-lang="en">10 years of experience</span>
-        </h1>
-        <p class="text-white/90 text-lg md:text-xl max-w-xl mb-8">
-          <span data-lang="es">Un saber hacer único al servicio de tu hogar</span>
-          <span data-lang="fr">Un savoir-faire unique au service de votre intérieur</span>
-          <span data-lang="en">Unique expertise at your service</span>
-        </p>
-        <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all">
-          <span data-lang="es">Solicitar presupuesto</span>
-          <span data-lang="fr">Demander un devis</span>
-          <span data-lang="en">Request a quote</span>
-        </a>
-      </div>
-    </div>
   </div>
   <!-- Dots -->
   <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
     <button onclick="goToSlide(0)" class="carousel-dot w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-index="0"></button>
     <button onclick="goToSlide(1)" class="carousel-dot w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-index="1"></button>
     <button onclick="goToSlide(2)" class="carousel-dot w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-index="2"></button>
-    <button onclick="goToSlide(3)" class="carousel-dot w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-index="3"></button>
   </div>
 </section>
 
@@ -317,7 +296,7 @@
         <span data-lang="en">Our mission is to help our clients maintain healthier, safer, and more reliable environments.</span>
       </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
       <!-- Particuliers -->
       <div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-primary/10 text-center flex flex-col">
         <div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 text-3xl group-hover:bg-primary group-hover:text-on-primary transition-all duration-500 text-primary mx-auto">
@@ -331,11 +310,11 @@
         <ul class="space-y-3 text-sm text-on-surface-variant font-medium mb-8 flex-grow">
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Limpieza regular (semanal, quincenal)</span><span data-lang="fr">Ménage régulier (hebdomadaire, bi-mensuel)</span><span data-lang="en">Regular cleaning (weekly, bi-weekly)</span></span>
+            <span><span data-lang="es">Limpieza en profundidad</span><span data-lang="fr">Nettoyage en profondeur</span><span data-lang="en">Deep cleaning</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Limpieza a fondo</span><span data-lang="fr">Grand nettoyage de printemps</span><span data-lang="en">Deep cleaning</span></span>
+            <span><span data-lang="es">Limpieza puntual</span><span data-lang="fr">Nettoyage ponctuel</span><span data-lang="en">One-off cleaning</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
@@ -343,11 +322,15 @@
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
-            <span><span data-lang="es">Mantenimiento de segundas residencias</span><span data-lang="fr">Entretien de résidences secondaires</span><span data-lang="en">Second home maintenance</span></span>
+            <span><span data-lang="es">Mantenimiento de segundas residencias</span><span data-lang="fr">Entretien résidence secondaire</span><span data-lang="en">Second home maintenance</span></span>
           </li>
           <li class="flex items-start gap-2 text-left">
             <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
             <span><span data-lang="es">Limpieza entre inquilinos</span><span data-lang="fr">Ménage entre locataires</span><span data-lang="en">Tenant turnover cleaning</span></span>
+          </li>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-primary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Limpieza de asientos de coche, colchones, alfombras, sofás</span><span data-lang="fr">Nettoyage sièges de voiture, matelas, tapis, canapés</span><span data-lang="en">Car seats, mattresses, carpets, sofas cleaning</span></span>
           </li>
         </ul>
         <a href="#contact" class="text-primary font-bold hover:underline mt-auto">
@@ -383,8 +366,46 @@
             <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
             <span><span data-lang="es">Comunidades y zonas comunes</span><span data-lang="fr">Copropriétés et parties communes</span><span data-lang="en">Common areas and condos</span></span>
           </li>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-secondary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Limpieza entre inquilinos</span><span data-lang="fr">Nettoyage entre locataires</span><span data-lang="en">Tenant turnover cleaning</span></span>
+          </li>
         </ul>
         <a href="#contact" class="text-secondary font-bold hover:underline mt-auto">
+          <span data-lang="es">Más información →</span>
+          <span data-lang="fr">En savoir plus →</span>
+          <span data-lang="en">Learn more →</span>
+        </a>
+      </div>
+      <!-- Ménage profond -->
+      <div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-tertiary/10 text-center flex flex-col">
+        <div class="w-16 h-16 bg-tertiary rounded-xl flex items-center justify-center mb-8 text-on-tertiary group-hover:bg-tertiary/80 transition-all duration-500 mx-auto">
+          <span class="material-symbols-outlined text-4xl">cleaning_services</span>
+        </div>
+        <h3 class="font-headline text-2xl font-bold mb-4">
+          <span data-lang="es">Limpieza profunda</span>
+          <span data-lang="fr">Ménage profond</span>
+          <span data-lang="en">Deep cleaning</span>
+        </h3>
+        <ul class="space-y-3 text-sm text-on-surface-variant font-medium mb-8 flex-grow">
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-tertiary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Despejo</span><span data-lang="fr">Désencombrement</span><span data-lang="en">Decluttering</span></span>
+          </li>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-tertiary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Desinfección</span><span data-lang="fr">Désinfection</span><span data-lang="en">Disinfection</span></span>
+          </li>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-tertiary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Técnicas y equipos especializados para un desengrase profundo y ecológico</span><span data-lang="fr">Utilisation de techniques et matériels spécialisés pour un décapage profond et écologique</span><span data-lang="en">Specialized techniques and equipment for deep, eco-friendly stripping</span></span>
+          </li>
+          <li class="flex items-start gap-2 text-left">
+            <svg class="text-tertiary shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5-5-5 1.41-1.41L10 13.67l7.59-7.59L19 7.5l-9 9z"/></svg>
+            <span><span data-lang="es">Limpieza de fin de obra</span><span data-lang="fr">Nettoyage de fin de chantier</span><span data-lang="en">Post-construction cleaning</span></span>
+          </li>
+        </ul>
+        <a href="#contact" class="text-tertiary font-bold hover:underline mt-auto">
           <span data-lang="es">Más información →</span>
           <span data-lang="fr">En savoir plus →</span>
           <span data-lang="en">Learn more →</span>
