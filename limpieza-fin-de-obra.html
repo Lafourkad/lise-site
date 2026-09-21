@@ -113,42 +113,11 @@
       <img src="logo-final.png" alt="Logo Limpiezas y Soluciones" class="h-9 w-9 object-contain rounded-lg"/>
       <span class="text-sm md:text-xl font-extrabold tracking-tight text-primary font-headline">Limpiezas y Soluciones</span></a>
     <div class="hidden md:flex items-center gap-8">
-      <div class="relative">
-        <button id="serviciosToggle" class="flex items-center gap-1 text-on-surface-variant font-medium hover:text-primary transition-colors">
-          <span data-lang="es">Servicios</span>
-          <span data-lang="fr">Services</span>
-          <span data-lang="en">Services</span><span data-lang="de">Leistungen</span><span data-lang="it">Servizi</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="text-on-surface-variant"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-        </button>
-        <div id="serviciosDropdown" class="absolute left-0 top-full mt-1 bg-white rounded-lg shadow-lg border border-outline-variant/20 hidden overflow-hidden z-50">
-          <a href="limpieza-comunidades" class="block px-4 py-2 hover:bg-surface-container text-sm font-medium text-left whitespace-nowrap">
-            <span data-lang="es">Comunidades</span>
-            <span data-lang="fr">Copropriétés</span>
-            <span data-lang="en">Common areas</span><span data-lang="de">Wohnanlagen</span><span data-lang="it">Condomini</span>
-          </a>
-          <a href="limpieza-fin-de-obra" class="block px-4 py-2 hover:bg-surface-container text-sm font-medium text-left whitespace-nowrap">
-            <span data-lang="es">Fin de obra</span>
-            <span data-lang="fr">Fin de chantier</span>
-            <span data-lang="en">Post-construction</span><span data-lang="de">Bauendreinigung</span><span data-lang="it">Fine cantiere</span>
-          </a>
-          <a href="limpieza-oficinas" class="block px-4 py-2 hover:bg-surface-container text-sm font-medium text-left whitespace-nowrap">
-            <span data-lang="es">Oficinas</span>
-            <span data-lang="fr">Bureaux</span>
-            <span data-lang="en">Offices</span><span data-lang="de">Büros</span><span data-lang="it">Uffici</span>
-          </a>
-          <a href="sofas-y-colchones" class="block px-4 py-2 hover:bg-surface-container text-sm font-medium text-left whitespace-nowrap">
-            <span data-lang="es">Sofás y colchones</span>
-            <span data-lang="fr">Canapés et matelas</span>
-            <span data-lang="en">Sofas &amp; mattresses</span><span data-lang="de">Sofas &amp; Matratzen</span><span data-lang="it">Divani e materassi</span>
-          </a>
-          <div class="border-t border-outline-variant/20"></div>
-          <a href="servicios" class="block px-4 py-2 hover:bg-surface-container text-sm font-bold text-primary text-left whitespace-nowrap">
-            <span data-lang="es">Todos los servicios</span>
-            <span data-lang="fr">Tous les services</span>
-            <span data-lang="en">All services</span><span data-lang="de">Alle Leistungen</span><span data-lang="it">Tutti i servizi</span>
-          </a>
-        </div>
-      </div>
+      <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="servicios">
+        <span data-lang="es">Servicios</span>
+        <span data-lang="fr">Services</span>
+        <span data-lang="en">Services</span><span data-lang="de">Leistungen</span><span data-lang="it">Servizi</span>
+      </a>
       <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="sobre-nosotros.html#expertise">
         <span data-lang="es">Por qué elegirnos</span>
         <span data-lang="fr">Notre expertise</span>
@@ -564,24 +533,19 @@
         </h4>
         <ul class="space-y-3">
           <li><a href="limpieza-comunidades" class="text-sm text-slate-400 hover:text-primary transition-colors">
-            <span data-lang="es">Comunidades</span>
-            <span data-lang="fr">Copropriétés</span>
-            <span data-lang="en">Common areas</span>
+            <span data-lang="es">Limpieza de comunidades</span>
+            <span data-lang="fr">Nettoyage de copropriétés</span>
+            <span data-lang="en">Community cleaning</span>
           </a></li>
           <li><a href="limpieza-oficinas" class="text-sm text-slate-400 hover:text-primary transition-colors">
-            <span data-lang="es">Oficinas</span>
-            <span data-lang="fr">Bureaux</span>
-            <span data-lang="en">Offices</span>
+            <span data-lang="es">Limpieza de oficinas</span>
+            <span data-lang="fr">Nettoyage de bureaux</span>
+            <span data-lang="en">Office cleaning</span>
           </a></li>
           <li><a href="limpieza-fin-de-obra" class="text-sm text-slate-400 hover:text-primary transition-colors">
-            <span data-lang="es">Fin de obra</span>
-            <span data-lang="fr">Fin de chantier</span>
-            <span data-lang="en">Post-construction</span>
-          </a></li>
-          <li><a href="sofas-y-colchones" class="text-sm text-slate-400 hover:text-primary transition-colors">
-            <span data-lang="es">Sofás y colchones</span>
-            <span data-lang="fr">Canapés et matelas</span>
-            <span data-lang="en">Sofas &amp; mattresses</span>
+            <span data-lang="es">Limpieza de fin de obra</span>
+            <span data-lang="fr">Nettoyage fin de chantier</span>
+            <span data-lang="en">Post-construction cleaning</span>
           </a></li>
         </ul>
       </div>
@@ -618,20 +582,6 @@
   document.addEventListener('click', (e) => {
     if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
       langDropdown.classList.add('hidden');
-    }
-  });
-
-  // Servicios dropdown
-  const serviciosToggle = document.getElementById('serviciosToggle');
-  const serviciosDropdown = document.getElementById('serviciosDropdown');
-
-  serviciosToggle.addEventListener('click', () => {
-    serviciosDropdown.classList.toggle('hidden');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!serviciosToggle.contains(e.target) && !serviciosDropdown.contains(e.target)) {
-      serviciosDropdown.classList.add('hidden');
     }
   });
 
